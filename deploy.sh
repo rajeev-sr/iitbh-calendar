@@ -11,6 +11,7 @@ _help(){
   exit 1
 }
 # abort on errors
+
 set -e
 
 while getopts "yvhd:u:r:" opt; do
