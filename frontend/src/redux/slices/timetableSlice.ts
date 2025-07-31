@@ -1,6 +1,6 @@
-import { timetable } from "@/src/lib/types";
+import { timetable } from "@/lib/types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { TimetablePayload } from "@/src/lib/types";
+import { TimetablePayload } from "@/lib/types";
 
 const initialState: timetable = {
     mapping: {},
