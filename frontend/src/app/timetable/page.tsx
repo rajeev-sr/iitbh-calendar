@@ -128,7 +128,7 @@ export default function Timetable() {
               </h3>
               {clashes && clashes.length > 0 ? (
                 <ul className="list-disc pl-5 space-y-2">
-                  {clashes.map((message, index) => (
+                  {clashes.map((message: string, index: number) => (
                     <li key={index} className="text-red-600">
                       {message}
                     </li>
@@ -145,7 +145,7 @@ export default function Timetable() {
               </h3>
               {additional_messages && additional_messages.length > 0 ? (
                 <ul className="list-disc pl-5 space-y-2">
-                  {additional_messages.map((message, index) => (
+                  {additional_messages.map((message: string, index: number) => (
                     <li key={index} className="text-gray-700">
                       {message}
                     </li>
