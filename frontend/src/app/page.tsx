@@ -28,7 +28,7 @@ export default function Home() {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch(`${backendDomain}/get_all_courses/`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/get_all_courses/`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -159,7 +159,7 @@ export default function Home() {
   const handleGenerateTimetable = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(`${backendDomain}/submit/`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/submit/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
